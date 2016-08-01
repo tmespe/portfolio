@@ -1,0 +1,204 @@
+<!<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Terje Mikal Espedal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/b601dd9109.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-social-gh-pages/bootstrap-social.css" </head>
+    <script>
+        $(document).ready(function() {
+           $('.thumbnail').click(function() {
+                $(".selected").removeClass('selected'); 
+                $(this).toggleClass('selected'); // adds the class to the clicked image
+            });
+
+           
+  
+        });
+    </script>
+
+    <body>
+        <header class="container-fluid">
+
+
+            <nav id="top" class="navbar navbar-inverse navbar-fixed-top navbar-custom page-scroll">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="col-sm-8"><a href="#top">Tmespe</a></h1>
+                        <div id="navigation" class="col-sm-4 navbar-right">
+                            <a href="#">About</a>
+                            <a href="#projects">Portfolio</a>
+                            <a href="#contact-form">Contact</a>
+                        </div>
+                    </div>
+            </nav>
+
+            </div>
+
+        </header>
+        <!-- About section with jumbotron -->
+        <div id="about" class="container">
+            <div id="jumbo" class="jumbotron">
+
+                <div class="row">
+                    <img id="profile" src="assets/profile.jpg" class="img-responsive img-circle col-sm-3" alt="stylized profile picture">
+                    <div class="col-sm-9">
+
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p>My name is Terje Mikal Espedal. I'm currently working in the education field, and am pursing
+                                    work in development. I currently have knowledge of Python, Javascript as well as HTML
+                                    and CSS.
+                                </p>
+                            </div>
+                            <hr class="col-sm-8"></hr>
+                            <div class="col-sm-9">
+                                <h2>Web Designer and Developer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section with Gallery -->
+        <div class="container">
+            <h1 id="projects" class="text-center">My Projects</h1>
+
+            <div id="gallery">
+                <!-- First row of 2x thumbnails -->
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="thumbnail">
+                            <img src="assets/tribute.png" alt="Thumbnail of tribute page about cows">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="thumbnail">
+                            <img src="assets/placeholder.jpg" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second row of 2x thumbnails -->
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="thumbnail">
+                            <img src="assets/placeholder.jpg" alt="...">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="thumbnail">
+                            <img src="assets/placeholder.jpg" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third row of 2x thumbnails -->
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="thumbnail">
+                            <img src="assets/placeholder.jpg" alt="...">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="thumbnail">
+                            <img src="assets/placeholder.jpg" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="container">
+            <h1 class="text-center">Contact me</h1>
+            <div class="inner contact">
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" method="post" action="#">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                            <!-- Email -->
+                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                            <!-- Subject -->
+                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                        </div>
+                        <!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea>
+                        </div>
+                        <!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                        </div>
+                        <!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
+
+                    <!-- Your Mail Message -->
+                    <div class="mail-message-area">
+                        <!-- Message -->
+                        <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Contact Form Area -->
+            </div>
+            <!-- End Inner -->
+
+
+
+        </div>
+        <!-- Bottom bar -->
+        
+            <footer class="footer">
+                <div class="container">
+                <h3 class="navbar-text pull-left">&copy; Terje Mikal Espedal
+                </h3>
+                <div id="social" class="pull-right">
+                    <a href="#"><i class="fa fa-facebook fa-2x navbar-text"></i></a>
+                    <a href="#"><i class="fa fa-google fa-2x navbar-text"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x navbar-text"></i></a>
+                    <a href="#"><i class="fa fa-github fa-2x navbar-text"></i></a>
+
+
+                </div>
+                </div>
+        
+        </footer>
+       
+    </body>
+
+</html>
