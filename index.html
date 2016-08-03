@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Terje Mikal Espedal</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
+   
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-
+    <link href="stylesheets/boostrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
@@ -38,7 +39,7 @@
                         <h1 class="col-sm-6 col-lg-8"><a href="#top">Tmespe</a></h1>
                         <div id="navigation" class="col-sm-6 col-lg-4 navbar-right">
                             <a href="#">About</a>
-                            <a href="#projects">Portfolio</a>
+                            <a href="#projects">Projects</a>
                             <a href="#contact-form">Contact</a>
                         </div>
                     </div>
@@ -48,45 +49,37 @@
 
         </header>
         <!-- About section with jumbotron -->
-        <div id="about" class="container">
-            <div id="jumbo" class="jumbotron">
 
-                <div class="row">
-                    <img id="profile" src="assets/profile.jpg" class="img-responsive img-circle col-sm-3" alt="stylized profile picture">
-                    <div class="col-sm-9">
+        <div id="jumbo" class="jumbotron">
+
+            <img id="profile-picture" src="assets/profile.jpg" class="img-responsive img-circle col-sm-3 centering" alt="stylized profile picture">
+            <p >My name is Terje Mikal Espedal. I'm currently working in the education field, and working on combining 
+                my experience with newfound skills web-design and development.
+                I currently have knowledge of Python, Javascript as well as HTML and CSS.
+            </p>
+            <hr></hr>
+            <h1 class="display-1">Web Designer and Developer</h1>
+           <a href="#projects"><button id="button">My projects</button></a>
 
 
-                        <div class="row">
-                            <div class="col-sm-9">
-                                <p>My name is Terje Mikal Espedal. I'm currently working in the education field, and am pursing
-                                    work in development. I currently have knowledge of Python, Javascript as well as HTML
-                                    and CSS.
-                                </p>
-                            </div>
-                            <hr class="col-sm-8"></hr>
-                            <div class="col-sm-9">
-                                <h2>Web Designer and Developer</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        
         <!-- Portfolio section with Gallery -->
-        <div class="container">
-            <h1 id="projects" class="text-center">My Projects</h1>
+        
+           
 
-            <div id="gallery">
+            <div id="gallery" class="container-fluid">
+                 <h1 id="projects" class="text-center">My Projects</h1>
                 <!-- First row of 2x thumbnails -->
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="thumbnail">
                             <img src="assets/tribute.png" alt="Thumbnail of tribute page about cows">
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-lg-4">
                         <div class="thumbnail">
                             <img src="assets/placeholder.jpg" alt="...">
 
@@ -97,13 +90,13 @@
                 <!-- Second row of 2x thumbnails -->
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="thumbnail">
                             <img src="assets/placeholder.jpg" alt="...">
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="thumbnail">
                             <img src="assets/placeholder.jpg" alt="...">
 
@@ -114,13 +107,13 @@
                 <!-- Third row of 2x thumbnails -->
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="thumbnail">
                             <img src="assets/placeholder.jpg" alt="...">
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="thumbnail">
                             <img src="assets/placeholder.jpg" alt="...">
 
@@ -129,7 +122,7 @@
                 </div>
 
             </div>
-        </div>
+       
 
         <!-- Contact form -->
         <div class="container">
@@ -182,9 +175,9 @@
 
         </div>
         <!-- Bottom bar -->
-        
-            <footer class="footer">
-                <div class="container">
+
+        <footer class="footer">
+            <div class="container">
                 <h3 class="navbar-text pull-left">&copy; Terje Mikal Espedal
                 </h3>
                 <div id="social" class="pull-right">
@@ -195,10 +188,10 @@
 
 
                 </div>
-                </div>
-        
+            </div>
+
         </footer>
-       
+
     </body>
 
 </html>
